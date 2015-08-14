@@ -1,0 +1,7 @@
+[core]
+	editor = vim
+[user]
+	name = probalazs
+	email = probalazs@nyenyere.eu
+[push]
+	default = matching
