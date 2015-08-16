@@ -358,12 +358,12 @@
     <!-- Keybindings for running Run menu from Lxpanel on Home + R-->
     <keybind key="W-r">
       <action name="Execute">
-        <command>lxsession-default launcher_manager</command>
+        <command>lxpanelctl run</command>
       </action>
     </keybind>
     <keybind key="A-F2">
       <action name="Execute">
-        <command>lxsession-default launcher_manager</command>
+        <command>lxpanelctl run</command>
       </action>
     </keybind>
     <!-- Keybindings for running Menu from Lxpanel -->
