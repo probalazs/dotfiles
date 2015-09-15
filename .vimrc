@@ -17,6 +17,7 @@ call vundle#begin()
 	Plugin 'editorconfig/editorconfig-vim'
     Plugin 'scrooloose/syntastic'
     Plugin 'rking/ag.vim'
+    Plugin 'pangloss/vim-javascript'
 call vundle#end()
 
 """"""""""""""""
