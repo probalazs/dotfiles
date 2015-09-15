@@ -18,6 +18,7 @@ call vundle#begin()
     Plugin 'scrooloose/syntastic'
     Plugin 'rking/ag.vim'
     Plugin 'pangloss/vim-javascript'
+    Plugin 'kchmck/vim-coffee-script'
 call vundle#end()
 
 """"""""""""""""
