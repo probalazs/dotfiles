@@ -26,7 +26,7 @@ call vundle#end()
 """"""""""""""""
 
 " import base vim settings
-source ./.vimrc-base
+source ~/.vimrc-base
 
 " disabled error bells
 set noerrorbells
