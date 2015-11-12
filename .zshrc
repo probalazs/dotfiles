@@ -7,9 +7,6 @@ ZSH_THEME="robbyrussell"
 # auto-update interval (in days)
 export UPDATE_ZSH_DAYS=7
 
-# display red dots whilst waiting for completion
-COMPLETION_WAITING_DOTS="true"
-
 # which plugins would you like load
 plugins=(
     git
