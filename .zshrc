@@ -1,5 +1,5 @@
 # path to your oh-my-zsh installation
-export ZSH=/home/probalazs/.oh-my-zsh
+export ZSH=~/.oh-my-zsh
 
 # set name of the theme to load
 ZSH_THEME="robbyrussell"
