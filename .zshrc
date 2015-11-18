@@ -31,3 +31,7 @@ export LANG=en_US.UTF-8
 
 # preferred editor for local and remote sessions
 export EDITOR='vim'
+
+# load nvm
+export NVM_DIR="/home/probalazs/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  
