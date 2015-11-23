@@ -19,6 +19,9 @@ call vundle#begin()
     Plugin 'rking/ag.vim'
     Plugin 'pangloss/vim-javascript'
     Plugin 'kchmck/vim-coffee-script'
+    Plugin 'eagletmt/neco-ghc'
+    Plugin 'eagletmt/ghcmod-vim'
+    Plugin 'Shougo/vimproc.vim'
 call vundle#end()
 
 """"""""""""""""
@@ -98,6 +101,8 @@ autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
 autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
 autocmd FileType php setlocal omnifunc=phpcomplete#CompletePHP
 autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
+let g:haskellmode_completion_ghc = 0
+autocmd FileType haskell setlocal omnifunc=necoghc#omnifunc
 
 if !exists('g:neocomplete#sources#omni#input_patterns')
     let g:neocomplete#sources#omni#input_patterns = {}
