@@ -11,10 +11,6 @@ export UPDATE_ZSH_DAYS=7
 plugins=(
     git
     mercurial
-    bower
-    ubuntu
-    npm
-    grunt
     docker
     docker-compose
     nvm
