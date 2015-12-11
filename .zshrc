@@ -33,5 +33,5 @@ export LANG=en_US.UTF-8
 export EDITOR='vim'
 
 # load nvm
-export NVM_DIR="/home/probalazs/.nvm"
+export NVM_DIR=~/.nvm
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  
