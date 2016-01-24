@@ -21,6 +21,8 @@ call vundle#begin()
     Plugin 'eagletmt/neco-ghc'
     Plugin 'eagletmt/ghcmod-vim'
     Plugin 'Shougo/vimproc.vim'
+    Plugin 'leafgarland/typescript-vim'
+    Plugin 'Quramy/tsuquyomi'
 call vundle#end()
 
 """"""""""""""""
@@ -100,6 +102,7 @@ autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
 autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
 autocmd FileType php setlocal omnifunc=phpcomplete#CompletePHP
 autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
+autocmd FileType typescript setlocal completeopt+=menu,preview
 let g:haskellmode_completion_ghc = 0
 autocmd FileType haskell setlocal omnifunc=necoghc#omnifunc
 
@@ -137,6 +140,9 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_enable_signs = 1
 let g:syntastic_javascript_checkers = ['jshint']
 let g:syntastic_php_checkers = ['php']
+
+" typescript-vim
+let g:typescript_indent_disable = 1
 
 """"""""""""""""
 " key bindings "
