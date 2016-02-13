@@ -63,7 +63,7 @@ colorscheme monokai
 set completeopt-=preview
 
 " highlight 80 column in specific files
-autocmd FileType cpp,c,h,hpp,python,sh,javascript,php,html,haskell,css,sass/scss,coffee setlocal colorcolumn=80
+autocmd FileType cpp,c,h,hpp,python,sh,javascript,php,html,haskell,css,sass/scss setlocal colorcolumn=80
 
 set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/.yardoc/*,*.so,*.pyc,*/bower_components/*,*/node_modules/*,*/data/*,*/dist/*,*.sass-cache/*
 
