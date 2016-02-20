@@ -10,6 +10,7 @@ export UPDATE_ZSH_DAYS=7
 # which plugins would you like load
 plugins=(
     git
+    ubuntu
     mercurial
     bower
     docker
