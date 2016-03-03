@@ -67,6 +67,9 @@ autocmd FileType cpp,c,h,hpp,python,sh,javascript,php,html,haskell,css,sass/scss
 
 set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/.yardoc/*,*.so,*.pyc,*/bower_components/*,*/node_modules/*,*/data/*,*/dist/*,*.sass-cache/*
 
+" check indentation
+autocmd BufRead * :DetectIndent
+
 " gui settings
 if has("gui_running")
     set guifont=Dejavu\ Sans\ Mono\ 9
