@@ -43,6 +43,9 @@ set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/.yardoc/*,*.so,*.pyc,*/bower_compone
 " check indentation
 autocmd BufRead * :DetectIndent
 
+" enable regexp engine
+set regexpengine=1
+
 """"""""""""""""
 " key bindings "
 """"""""""""""""
