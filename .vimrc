@@ -18,8 +18,6 @@ call vundle#begin()
     Plugin 'scrooloose/syntastic'
     Plugin 'rking/ag.vim'
     Plugin 'pangloss/vim-javascript'
-    Plugin 'eagletmt/neco-ghc'
-    Plugin 'eagletmt/ghcmod-vim'
     Plugin 'Shougo/vimproc.vim'
     Plugin 'leafgarland/typescript-vim'
     Plugin 'Quramy/tsuquyomi'
