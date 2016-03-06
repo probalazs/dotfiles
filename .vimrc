@@ -25,12 +25,49 @@ call vundle#begin()
     Plugin 'Quramy/tsuquyomi'
 call vundle#end()
 
-" import vim and neovim common rc
-source ~/.vimrc-common
+" import base vim settings
+source ~/.vimrc-base
 
-""""""""""""""""
-" vim settings "
-""""""""""""""""
+" disabled error bells
+set noerrorbells
+
+" disabled visual bells
+set novisualbell
+
+" use system clipboard
+set clipboard=unnamedplus
+
+" don't make a backup before overwriting a file 
+set nobackup
+
+" don't make a backup before overwriting a file 
+set nowb
+
+"  don't make a swap file
+set noswapfile
+
+" command-line completion operates in an enhanced mode
+set wildmenu
+
+" when more than one match, list all matches and complete till longest common string, alternative list all matches and complete first match
+set wildmode=list:longest,full
+
+" use monokai colorscheme
+colorscheme monokai
+
+" hide completion preview window
+set completeopt-=preview
+
+" highlight 80 column in specific files
+autocmd FileType cpp,c,h,hpp,python,sh,javascript,php,html,haskell,css,sass/scss setlocal colorcolumn=80
+
+set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/.yardoc/*,*.so,*.pyc,*/bower_components/*,*/node_modules/*,*/data/*,*/dist/*,*.sass-cache/*
+
+" check indentation
+autocmd BufRead * :DetectIndent
+
+" enable regexp engine
+set regexpengine=1
 
 " gui settings
 if has("gui_running")
@@ -40,6 +77,11 @@ if has("gui_running")
     set guioptions-=L
     set guioptions-=r
 endif
+
+""""""""""""""""
+" key bindings "
+""""""""""""""""
+nnoremap <F4> :NERDTreeToggle<CR>  
 
 """""""""""""""""""
 " plugin settings "
@@ -82,6 +124,7 @@ let g:neocomplete#same_filetypes.css = 'scss,sass'
 
 " nerdtree
 let g:nerdtree_tabs_open_on_gui_startup = 0
+let NERDTreeIgnore = ['\.pyc$']
 
 " syntastic 
 set statusline+=%#warningmsg#
@@ -93,3 +136,18 @@ let g:syntastic_enable_signs = 1
 let g:syntastic_javascript_checkers = ['jshint']
 let g:syntastic_php_checkers = ['php']
 let g:syntastic_haskerll_checkers = ['hlint']
+
+" typescript-vim
+let g:typescript_indent_disable = 1
+
+" ctrlspace
+let g:airline_exclude_preview = 1
+let g:ctrlspace_use_ruby_bindings = 1
+let g:ctrlspace_use_mouse_and_arrows_in_term = 1
+let g:ctrlspace_save_workspace_on_exit = 1
+let g:ctrlspace_save_workspace_on_switch = 1
+
+" airline
+let g:airline_exclude_preview = 1
+let g:airline_left_sep = '»'
+let g:airline_right_sep = '«'
