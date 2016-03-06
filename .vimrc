@@ -80,18 +80,6 @@ if !exists('g:neocomplete#same_filetypes')
 endif
 let g:neocomplete#same_filetypes.css = 'scss,sass'
 
-" ctrlspace
-let g:airline_exclude_preview = 1
-let g:ctrlspace_use_ruby_bindings = 1
-let g:ctrlspace_use_mouse_and_arrows_in_term = 1
-let g:ctrlspace_save_workspace_on_exit = 1
-let g:ctrlspace_save_workspace_on_switch = 1
-
-" airline
-let g:airline_exclude_preview = 1
-let g:airline_left_sep = '»'
-let g:airline_right_sep = '«'
-
 " nerdtree
 let g:nerdtree_tabs_open_on_gui_startup = 0
 
