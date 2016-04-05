@@ -1,4 +1,4 @@
-" init vundle
+" init plugins
 call plug#begin('~/.vim/plugged')
     Plug 'ekalinin/Dockerfile.vim'
     Plug 'cakebaker/scss-syntax.vim'
@@ -72,10 +72,10 @@ if has("gui_running")
     set guioptions-=r
 endif
 
-
 """"""""""""""""
 " key bindings "
 """"""""""""""""
+
 " toggle nerdtree
 nnoremap <F4> :NERDTreeToggle<CR>  
 
