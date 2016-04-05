@@ -1,27 +1,23 @@
 " init vundle
-set nocompatible
-filetype off
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-    Plugin 'gmarik/Vundle.vim'
-    Plugin 'ekalinin/Dockerfile.vim'
-    Plugin 'cakebaker/scss-syntax.vim'
-    Plugin 'ciaranm/detectindent'
-    Plugin 'jistr/vim-nerdtree-tabs'
-    Plugin 'scrooloose/nerdtree'
-    Plugin 'szw/vim-ctrlspace'
-    Plugin 'sickill/vim-monokai'
-    Plugin 'Shougo/neocomplete.vim'
-    Plugin 'bling/vim-airline'
-    Plugin 'kien/ctrlp.vim'
-	Plugin 'editorconfig/editorconfig-vim'
-    Plugin 'scrooloose/syntastic'
-    Plugin 'rking/ag.vim'
-    Plugin 'pangloss/vim-javascript'
-    Plugin 'Shougo/vimproc.vim'
-    Plugin 'leafgarland/typescript-vim'
-    Plugin 'Quramy/tsuquyomi'
-call vundle#end()
+call plug#begin('~/.vim/plugged')
+    Plug 'ekalinin/Dockerfile.vim'
+    Plug 'cakebaker/scss-syntax.vim'
+    Plug 'ciaranm/detectindent'
+    Plug 'jistr/vim-nerdtree-tabs'
+    Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
+    Plug 'szw/vim-ctrlspace'
+    Plug 'sickill/vim-monokai'
+    Plug 'Shougo/neocomplete.vim'
+    Plug 'bling/vim-airline'
+    Plug 'kien/ctrlp.vim'
+	Plug 'editorconfig/editorconfig-vim'
+    Plug 'scrooloose/syntastic'
+    Plug 'rking/ag.vim'
+    Plug 'pangloss/vim-javascript'
+    Plug 'Shougo/vimproc.vim', { 'do': 'make' }
+    Plug 'leafgarland/typescript-vim'
+    Plug 'Quramy/tsuquyomi'
+call plug#end()
 
 " import base vim settings
 source ~/.vimrc-base
@@ -75,6 +71,7 @@ if has("gui_running")
     set guioptions-=L
     set guioptions-=r
 endif
+
 
 """"""""""""""""
 " key bindings "
