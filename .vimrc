@@ -8,15 +8,14 @@ call plug#begin('~/.vim/plugged')
     Plug 'szw/vim-ctrlspace'
     Plug 'sickill/vim-monokai'
     Plug 'Shougo/neocomplete.vim'
-    Plug 'bling/vim-airline'
+    Plug 'vim-airline/vim-airline-themes'
+    Plug 'vim-airline/vim-airline'
     Plug 'kien/ctrlp.vim'
-	Plug 'editorconfig/editorconfig-vim'
+    Plug 'editorconfig/editorconfig-vim'
     Plug 'scrooloose/syntastic'
     Plug 'rking/ag.vim'
     Plug 'pangloss/vim-javascript'
     Plug 'Shougo/vimproc.vim', { 'do': 'make' }
-    Plug 'leafgarland/typescript-vim'
-    Plug 'Quramy/tsuquyomi'
 call plug#end()
 
 " import base vim settings
@@ -110,9 +109,6 @@ autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
 autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
 autocmd FileType php setlocal omnifunc=phpcomplete#CompletePHP
 autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
-autocmd FileType typescript setlocal completeopt+=menu,preview
-let g:haskellmode_completion_ghc = 0
-autocmd FileType haskell setlocal omnifunc=necoghc#omnifunc
 
 if !exists('g:neocomplete#sources#omni#input_patterns')
     let g:neocomplete#sources#omni#input_patterns = {}
@@ -136,13 +132,8 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_enable_signs = 1
 let g:syntastic_javascript_checkers = ['jshint']
 let g:syntastic_php_checkers = ['php']
-let g:syntastic_haskerll_checkers = ['hlint']
-
-" typescript-vim
-let g:typescript_indent_disable = 1
 
 " ctrlspace
-let g:airline_exclude_preview = 1
 let g:ctrlspace_use_ruby_bindings = 1
 let g:ctrlspace_use_mouse_and_arrows_in_term = 1
 let g:ctrlspace_save_workspace_on_exit = 1
@@ -150,5 +141,5 @@ let g:ctrlspace_save_workspace_on_switch = 1
 
 " airline
 let g:airline_exclude_preview = 1
-let g:airline_left_sep = '»'
-let g:airline_right_sep = '«'
+let g:airline_left_sep = ''
+let g:airline_right_sep = ''
