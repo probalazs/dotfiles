@@ -76,7 +76,13 @@ endif
 """"""""""""""""
 " key bindings "
 """"""""""""""""
+" toggle nerdtree
 nnoremap <F4> :NERDTreeToggle<CR>  
+
+" clear highlights
+if maparg('<C-L>', 'n') ==# ''
+  nnoremap <silent> <C-L> :nohlsearch<C-R>=has('diff')?'<Bar>diffupdate':''<CR><CR><C-L>
+endif
 
 """""""""""""""""""
 " plugin settings "
