@@ -46,9 +46,6 @@ set wildmenu
 " when more than one match, list all matches and complete till longest common string, alternative list all matches and complete first match
 set wildmode=list:longest,full
 
-" use monokai colorscheme
-colorscheme monokai
-
 " hide completion preview window
 set completeopt-=preview
 
@@ -65,6 +62,9 @@ set regexpengine=1
 
 " gui settings
 if has("gui_running")
+    " use monokai colorscheme
+    colorscheme monokai
+
     set guifont=Dejavu\ Sans\ Mono\ 9
     set guioptions-=T
     set guioptions-=m
