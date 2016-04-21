@@ -1,5 +1,6 @@
 " init plugins
 call plug#begin('~/.vim/plugged')
+    Plug 'vagrant.vim'
     Plug 'ekalinin/Dockerfile.vim'
     Plug 'cakebaker/scss-syntax.vim'
     Plug 'ciaranm/detectindent'
@@ -143,3 +144,9 @@ let g:ctrlspace_save_workspace_on_switch = 1
 let g:airline_exclude_preview = 1
 let g:airline_left_sep = ''
 let g:airline_right_sep = ''
+
+" vagrant.vim
+augroup vagrant
+    au!
+    au BufRead,BufNewFile Vagrantfile set filetype=ruby
+augroup END
