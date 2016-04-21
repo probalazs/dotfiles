@@ -1,28 +1,28 @@
 [global_config]
-  geometry_hinting = False
   always_split_with_profile = True
+  geometry_hinting = False
   inactive_color_offset = 0.83
 [keybindings]
-  split_horiz = <Primary><Shift>o
   next_tab = <Shift>Right
-  split_vert = <Primary><Shift>e
   prev_tab = <Shift>Left
-[profiles]
-  [[default]]
-    use_system_font = False
-    background_darkness = 0.88
-    background_type = transparent
-    background_image = None
-    foreground_color = "#00ff00"
-    show_titlebar = False
-    font = Monospace 9
-    scrollback_infinite = True
+  split_horiz = <Primary><Shift>o
+  split_vert = <Primary><Shift>e
 [layouts]
   [[default]]
     [[[child1]]]
-      type = Terminal
       parent = window0
+      type = Terminal
     [[[window0]]]
-      type = Window
       parent = ""
+      type = Window
 [plugins]
+[profiles]
+  [[default]]
+    background_darkness = 0.88
+    background_image = None
+    background_type = transparent
+    font = Monospace 9
+    foreground_color = "#00ff00"
+    scrollback_infinite = True
+    show_titlebar = False
+    use_system_font = False
