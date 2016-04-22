@@ -145,3 +145,6 @@ augroup vagrant
     au!
     au BufRead,BufNewFile Vagrantfile set filetype=ruby
 augroup END
+
+" ag.vim
+let g:ag_prg="ag --vimgrep  --vimgrep --ignore bower_components --ignore node_modules --ignore .sass-cache --ignore /dist/"
