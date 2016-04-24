@@ -8,7 +8,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
     Plug 'szw/vim-ctrlspace'
     Plug 'sickill/vim-monokai'
-    Plug 'Shougo/neocomplete.vim'
+    Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer --tern-completer' }
     Plug 'vim-airline/vim-airline-themes'
     Plug 'vim-airline/vim-airline'
     Plug 'kien/ctrlp.vim'
@@ -83,38 +83,6 @@ nnoremap <F4> :NERDTreeToggle<CR>
 " plugin settings "
 """""""""""""""""""
 
-" neocomplete
-let g:acp_enableAtStartup = 0
-let g:neocomplete#enable_at_startup = 1
-let g:neocomplete#sources#syntax#min_keyword_length = 3
-let g:neocomplete#enable_ignore_case = 1
-let g:neocomplete#lock_buffer_name_pattern = '\*ku\*'
-let g:neocomplete#max_list = 20
-
-if !exists('g:neocomplete#keyword_patterns')
-    let g:neocomplete#keyword_patterns = {}
-endif
-let g:neocomplete#keyword_patterns['default'] = '\h\w*'
-
-inoremap <expr><Left>  neocomplete#cancel_popup() . "\<Left>"
-inoremap <expr><Right> neocomplete#cancel_popup() . "\<Right>"
-
-let g:neocomplete#enable_auto_select = 1
-
-autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
-autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
-autocmd FileType php setlocal omnifunc=phpcomplete#CompletePHP
-autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
-
-if !exists('g:neocomplete#sources#omni#input_patterns')
-    let g:neocomplete#sources#omni#input_patterns = {}
-endif
-
-if !exists('g:neocomplete#same_filetypes')
-    let g:neocomplete#same_filetypes = {}
-endif
-let g:neocomplete#same_filetypes.css = 'scss,sass'
-
 " nerdtree
 let g:nerdtree_tabs_open_on_gui_startup = 0
 let NERDTreeIgnore = ['\.pyc$']
@@ -145,3 +113,10 @@ augroup vagrant
     au!
     au BufRead,BufNewFile Vagrantfile set filetype=ruby
 augroup END
+
+" YouCompleteMe
+let g:ycm_path_to_python_interpreter = '/usr/bin/python'
+let g:ycm_always_populate_location_list = 1
+let g:ycm_key_list_select_completion = ['<TAB>', '<Down>']
+let g:ycm_filepath_completion_use_working_dir = 1
+let g:ycm_collect_identifiers_from_comments_and_strings = 1
