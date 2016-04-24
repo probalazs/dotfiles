@@ -120,3 +120,6 @@ let g:ycm_always_populate_location_list = 1
 let g:ycm_key_list_select_completion = ['<TAB>', '<Down>']
 let g:ycm_filepath_completion_use_working_dir = 1
 let g:ycm_collect_identifiers_from_comments_and_strings = 1
+
+" ag.vim
+let g:ag_prg="ag --vimgrep --ignore bower_components --ignore node_modules --ignore .sass-cache --ignore /dist/"
