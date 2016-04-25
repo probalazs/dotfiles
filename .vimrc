@@ -8,7 +8,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
     Plug 'szw/vim-ctrlspace'
     Plug 'sickill/vim-monokai'
-    Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer --tern-completer' }
+    Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer' }
     Plug 'vim-airline/vim-airline-themes'
     Plug 'vim-airline/vim-airline'
     Plug 'kien/ctrlp.vim'
