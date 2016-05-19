@@ -6,7 +6,6 @@ call plug#begin('~/.vim/plugged')
     Plug 'ciaranm/detectindent'
     Plug 'jistr/vim-nerdtree-tabs'
     Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
-    Plug 'szw/vim-ctrlspace'
     Plug 'sickill/vim-monokai'
     Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
     Plug 'vim-airline/vim-airline-themes'
@@ -16,6 +15,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'rking/ag.vim'
     Plug 'pangloss/vim-javascript'
     Plug 'Shougo/vimproc.vim', { 'do': 'make' }
+    Plug 'jlanzarotta/bufexplorer'
 call plug#end()
 
 " import base vim settings
@@ -27,7 +27,7 @@ source ~/.config/nvim/gui.vim
 " import plugin configs
 source ~/.config/nvim/plugins/ag.vim
 source ~/.config/nvim/plugins/airline.vim
-source ~/.config/nvim/plugins/ctrlspace.vim
+source ~/.config/nvim/plugins/bufexplorer.vim
 source ~/.config/nvim/plugins/nerdtree.vim
 source ~/.config/nvim/plugins/vagrant.vim
 source ~/.config/nvim/plugins/youcompleteme.vim
