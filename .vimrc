@@ -15,7 +15,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'rking/ag.vim'
     Plug 'pangloss/vim-javascript'
     Plug 'Shougo/vimproc.vim', { 'do': 'make' }
-    Plug 'jlanzarotta/bufexplorer'
+    Plug 'vim-ctrlspace/vim-ctrlspace'
 call plug#end()
 
 " import base vim settings
@@ -27,7 +27,7 @@ source ~/.vim/config/gui.vim
 " import plugin configs
 source ~/.vim/config/plugins/ag.vim
 source ~/.vim/config/plugins/airline.vim
-source ~/.vim/config/plugins/bufexplorer.vim
+source ~/.vim/config/plugins/ctrlspace.vim
 source ~/.vim/config/plugins/nerdtree.vim
 source ~/.vim/config/plugins/vagrant.vim
 source ~/.vim/config/plugins/youcompleteme.vim
