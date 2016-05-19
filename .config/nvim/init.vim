@@ -70,9 +70,3 @@ autocmd BufRead * :DetectIndent
 
 " enable regexp engine
 set regexpengine=1
-
-" gui settings
-if !empty($gui)
-    " use monokai colorscheme
-    colorscheme monokai
-endif
