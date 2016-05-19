@@ -19,18 +19,18 @@ call plug#begin('~/.vim/plugged')
 call plug#end()
 
 " import base vim settings
-source ~/.config/nvim/base.vim
+source ~/.vim/config/base.vim
 
 " import gui settings
-source ~/.config/nvim/gui.vim
+source ~/.vim/config/gui.vim
 
 " import plugin configs
-source ~/.config/nvim/plugins/ag.vim
-source ~/.config/nvim/plugins/airline.vim
-source ~/.config/nvim/plugins/bufexplorer.vim
-source ~/.config/nvim/plugins/nerdtree.vim
-source ~/.config/nvim/plugins/vagrant.vim
-source ~/.config/nvim/plugins/youcompleteme.vim
+source ~/.vim/config/plugins/ag.vim
+source ~/.vim/config/plugins/airline.vim
+source ~/.vim/config/plugins/bufexplorer.vim
+source ~/.vim/config/plugins/nerdtree.vim
+source ~/.vim/config/plugins/vagrant.vim
+source ~/.vim/config/plugins/youcompleteme.vim
 
 
 " disabled error bells
