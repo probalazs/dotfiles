@@ -16,6 +16,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'pangloss/vim-javascript'
     Plug 'Shougo/vimproc.vim', { 'do': 'make' }
     Plug 'vim-ctrlspace/vim-ctrlspace'
+    Plug 'scrooloose/syntastic'
 call plug#end()
 
 " import base vim settings
@@ -26,6 +27,7 @@ source ~/.vim/config/gui.vim
 
 " import plugin configs
 source ~/.vim/config/plugins/ag.vim
+source ~/.vim/config/plugins/syntastic.vim
 source ~/.vim/config/plugins/airline.vim
 source ~/.vim/config/plugins/ctrlspace.vim
 source ~/.vim/config/plugins/nerdtree.vim
