@@ -1,6 +1,6 @@
 if has('gui_running')
     " use monokai colorscheme
-    colorscheme monokai
+    colorscheme molokai
 
     set guifont=Dejavu\ Sans\ Mono\ 9
     set guioptions-=T
