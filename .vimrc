@@ -3,7 +3,6 @@ call plug#begin('~/.vim/plugged')
     Plug 'vagrant.vim'
     Plug 'ekalinin/Dockerfile.vim'
     Plug 'cakebaker/scss-syntax.vim'
-    Plug 'ciaranm/detectindent'
     Plug 'jistr/vim-nerdtree-tabs'
     Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
     Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
@@ -66,9 +65,6 @@ set completeopt-=preview
 autocmd FileType cpp,c,h,hpp,python,sh,javascript,php,html,haskell,css,sass/scss setlocal colorcolumn=80
 
 set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/.yardoc/*,*.so,*.pyc,*/bower_components/*,*/node_modules/*,*/data/*,*/dist/*,*.sass-cache/*
-
-" check indentation
-autocmd BufRead * :DetectIndent
 
 " enable regexp engine
 set regexpengine=1
