@@ -64,12 +64,15 @@ set hidden
 " show syntax highlight
 syntax on
 
+" :W sudo saves the file
+command W w !sudo tee % > /dev/null
+
 """"""""""""""""
 " key bindings "
 """"""""""""""""
 
 " clear highlights
-if maparg('<C-L>', 'n') ==# ''
-	nnoremap <silent> <C-L> :nohlsearch<C-R>=has('diff')?'<Bar>diffupdate':''<CR><CR><C-L>
+if maparg('<C-k>', 'n') ==# ''
+	nnoremap <silent> <C-k> :nohlsearch<C-R>=has('diff')?'<Bar>diffupdate':''<CR><CR><C-k>
 endif
 
