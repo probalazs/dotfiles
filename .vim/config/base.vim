@@ -64,9 +64,6 @@ set hidden
 " show syntax highlight
 syntax on
 
-" :W sudo saves the file
-command W w !sudo tee % > /dev/null
-
 """"""""""""""""
 " key bindings "
 """"""""""""""""
