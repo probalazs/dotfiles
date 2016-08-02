@@ -5,7 +5,6 @@ call plug#begin('~/.vim/plugged')
     Plug 'cakebaker/scss-syntax.vim'
     Plug 'jistr/vim-nerdtree-tabs'
     Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
-    " Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
     Plug 'Shougo/neocomplete.vim'
     Plug 'vim-airline/vim-airline-themes'
     Plug 'vim-airline/vim-airline'
@@ -32,9 +31,7 @@ source ~/.vim/config/plugins/airline.vim
 source ~/.vim/config/plugins/ctrlspace.vim
 source ~/.vim/config/plugins/nerdtree.vim
 source ~/.vim/config/plugins/vagrant.vim
-" source ~/.vim/config/plugins/youcompleteme.vim
 source ~/.vim/config/plugins/neocomplete.vim
-
 
 " disabled error bells
 set noerrorbells
