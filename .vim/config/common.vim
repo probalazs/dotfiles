@@ -4,9 +4,6 @@ set noerrorbells
 " disabled visual bells
 set novisualbell
 
-" use system clipboard
-set clipboard=unnamedplus
-
 " don't make a backup before overwriting a file 
 set nobackup
 

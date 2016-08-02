@@ -30,3 +30,7 @@ source ~/.vim/config/plugins/airline.vim
 source ~/.vim/config/plugins/ctrlspace.vim
 source ~/.vim/config/plugins/nerdtree.vim
 source ~/.vim/config/plugins/vagrant.vim
+source ~/.vim/config/plugins/deoplete.vim
+
+" use system clipboard
+set clipboard+=unnamedplus

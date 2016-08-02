@@ -35,3 +35,6 @@ source ~/.vim/config/plugins/ctrlspace.vim
 source ~/.vim/config/plugins/nerdtree.vim
 source ~/.vim/config/plugins/vagrant.vim
 source ~/.vim/config/plugins/neocomplete.vim
+
+" use system clipboard
+set clipboard=unnamedplus
