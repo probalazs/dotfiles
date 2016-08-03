@@ -24,6 +24,9 @@ export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:$PATH"
 # load oh-my-zsh
 source $ZSH/oh-my-zsh.sh
 
+# disable title rename in tmux
+export DISABLE_AUTO_TITLE="true"
+
 # language environment
 export LANG=en_US.UTF-8
 
