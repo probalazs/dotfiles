@@ -5,6 +5,7 @@ endfunction
 
 " init plugins
 call plug#begin('~/.vim/plugged')
+    Plug 'ciaranm/detectindent'
     Plug 'kristijanhusak/vim-hybrid-material'
     Plug 'vagrant.vim'
     Plug 'ekalinin/Dockerfile.vim'
@@ -39,6 +40,7 @@ source ~/.vim/config/plugins/vagrant.vim
 source ~/.vim/config/plugins/deoplete.vim
 source ~/.vim/config/plugins/neomake.vim
 source ~/.vim/config/plugins/vim-hybrid-material.vim
+source ~/.vim/config/plugins/detectindent.vim
 
 " use system clipboard
 set clipboard+=unnamedplus

@@ -1,0 +1,4 @@
+""""""""""""
+" settings "
+""""""""""""
+ autocmd BufRead * :DetectIndent
