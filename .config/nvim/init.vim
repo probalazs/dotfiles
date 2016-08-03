@@ -1,3 +1,8 @@
+" update remote deoplete plugins
+function! DoRemote(arg)
+    UpdateRemotePlugins
+endfunction
+
 " init plugins
 call plug#begin('~/.vim/plugged')
     Plug 'vagrant.vim'
@@ -5,7 +10,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'cakebaker/scss-syntax.vim'
     Plug 'jistr/vim-nerdtree-tabs'
     Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
-    Plug 'Shougo/deoplete.nvim'
+    Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote') }
     Plug 'vim-airline/vim-airline-themes'
     Plug 'vim-airline/vim-airline'
     Plug 'kien/ctrlp.vim'
