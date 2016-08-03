@@ -5,7 +5,7 @@ endfunction
 
 " init plugins
 call plug#begin('~/.vim/plugged')
-    Plug 'altercation/vim-colors-solarized'
+    Plug 'kristijanhusak/vim-hybrid-material'
     Plug 'vagrant.vim'
     Plug 'ekalinin/Dockerfile.vim'
     Plug 'cakebaker/scss-syntax.vim'
@@ -37,8 +37,8 @@ source ~/.vim/config/plugins/ctrlspace.vim
 source ~/.vim/config/plugins/nerdtree.vim
 source ~/.vim/config/plugins/vagrant.vim
 source ~/.vim/config/plugins/deoplete.vim
-source ~/.vim/config/plugins/vim-colors-solarized.vim
 source ~/.vim/config/plugins/neomake.vim
+source ~/.vim/config/plugins/vim-hybrid-material.vim
 
 " use system clipboard
 set clipboard+=unnamedplus
