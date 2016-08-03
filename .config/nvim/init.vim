@@ -38,6 +38,7 @@ source ~/.vim/config/plugins/nerdtree.vim
 source ~/.vim/config/plugins/vagrant.vim
 source ~/.vim/config/plugins/deoplete.vim
 source ~/.vim/config/plugins/vim-colors-solarized.vim
+source ~/.vim/config/plugins/neomake.vim
 
 " use system clipboard
 set clipboard+=unnamedplus
