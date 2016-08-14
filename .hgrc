@@ -1,4 +1,10 @@
 [ui]
 username = balazs
+editor = vim
+commitsubrepos = False
+
+[diff]
+git = True
+unified = 5
 
 %include ~/.hgrc.local
