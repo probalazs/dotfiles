@@ -23,6 +23,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'vim-ctrlspace/vim-ctrlspace'
     Plug 'neomake/neomake'
     Plug 'tomasr/molokai'
+    Plug 'benjie/neomake-local-eslint.vim'
 call plug#end()
 
 " import base vim settings
