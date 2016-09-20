@@ -22,7 +22,6 @@ call plug#begin('~/.vim/plugged')
     Plug 'Shougo/vimproc.vim', { 'do': 'make' }
     Plug 'vim-ctrlspace/vim-ctrlspace'
     Plug 'neomake/neomake'
-    Plug 'tomasr/molokai'
     Plug 'benjie/neomake-local-eslint.vim'
     Plug 'ternjs/tern_for_vim', { 'do': 'rm -rf node_modules && npm install' }
 call plug#end()
