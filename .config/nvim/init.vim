@@ -24,6 +24,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'neomake/neomake'
     Plug 'tomasr/molokai'
     Plug 'benjie/neomake-local-eslint.vim'
+    Plug 'ternjs/tern_for_vim', { 'do': 'rm -rf node_modules && npm install' }
 call plug#end()
 
 " import base vim settings
@@ -42,6 +43,7 @@ source ~/.vim/config/plugins/deoplete.vim
 source ~/.vim/config/plugins/neomake.vim
 source ~/.vim/config/plugins/vim-hybrid-material.vim
 source ~/.vim/config/plugins/detectindent.vim
+source ~/.vim/config/plugins/tern.vim
 
 " use system clipboard
 set clipboard+=unnamedplus
