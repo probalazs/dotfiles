@@ -24,9 +24,6 @@ call plug#end()
 " import base vim settings
 source ~/.vim/config/base.vim
 
-" import common settings
-source ~/.vim/config/common.vim
-
 " import plugin configs
 source ~/.vim/config/plugins/ag.vim
 source ~/.vim/config/plugins/airline.vim
