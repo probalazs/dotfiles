@@ -18,7 +18,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'vim-ctrlspace/vim-ctrlspace'
     Plug 'neomake/neomake'
     Plug 'benjie/neomake-local-eslint.vim'
-    Plug 'ternjs/tern_for_vim', { 'do': 'rm -rf node_modules && npm install' }
+    Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern' }
 call plug#end()
 
 " import base vim settings
