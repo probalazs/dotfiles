@@ -13,9 +13,8 @@ plugins=(
     ubuntu
     mercurial
     bower
-    docker
-    docker-compose
     nvm
+    npm
 )
 
 # path environment
@@ -38,6 +37,6 @@ export NVM_DIR=~/.nvm
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  
 
 # load local .zshrc
-if [ -f ~/.zshrc-local ]; then
-    source ~/.zshrc-local
+if [ -f ~/.zshrc.local ]; then
+    source ~/.zshrc.local
 fi
