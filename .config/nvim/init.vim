@@ -7,7 +7,6 @@ call plug#begin('~/.vim/plugged')
     Plug 'cakebaker/scss-syntax.vim'
     Plug 'jistr/vim-nerdtree-tabs'
     Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
-    Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
     Plug 'vim-airline/vim-airline-themes'
     Plug 'vim-airline/vim-airline'
     Plug 'kien/ctrlp.vim'
@@ -18,7 +17,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'vim-ctrlspace/vim-ctrlspace'
     Plug 'neomake/neomake'
     Plug 'benjie/neomake-local-eslint.vim'
-    Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern' }
+    Plug 'Valloric/YouCompleteMe', { 'do': './install.py --tern-completer' }
 call plug#end()
 
 " import base vim settings
@@ -30,11 +29,10 @@ source ~/.vim/config/plugins/airline.vim
 source ~/.vim/config/plugins/ctrlspace.vim
 source ~/.vim/config/plugins/nerdtree.vim
 source ~/.vim/config/plugins/vagrant.vim
-source ~/.vim/config/plugins/deoplete.vim
 source ~/.vim/config/plugins/neomake.vim
 source ~/.vim/config/plugins/vim-hybrid-material.vim
 source ~/.vim/config/plugins/detectindent.vim
-source ~/.vim/config/plugins/tern.vim
+source ~/.vim/config/plugins/ycm.vim
 
 " use system clipboard
 set clipboard+=unnamedplus
