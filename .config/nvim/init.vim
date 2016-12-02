@@ -18,6 +18,8 @@ call plug#begin('~/.vim/plugged')
     Plug 'neomake/neomake'
     Plug 'benjie/neomake-local-eslint.vim'
     Plug 'Valloric/YouCompleteMe', { 'do': './install.py --tern-completer' }
+    Plug 'leafgarland/typescript-vim', { 'for': 'typescript' }
+    Plug 'Quramy/tsuquyomi' , { 'for': 'typescript' }
 call plug#end()
 
 " import base vim settings
