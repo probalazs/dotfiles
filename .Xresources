@@ -29,3 +29,5 @@ urxvt.saveLines: 65535
 
 urxvt.font: xft:bitstream vera sans mono:size=9:antialias=true
 urxvt.boldFont: xft:bitstream vera sans mono:bold:size=9:antialias=true
+
+urxvt.letterSpace: -1
