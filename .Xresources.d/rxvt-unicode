@@ -1,0 +1,11 @@
+urxvt.scrollBar: true
+urxvt.scrollBar_right: true
+urxvt.scrollBar_floating: false
+urxvt.scrollTtyOutput: false
+urxvt.scrollWithBuffer: true
+urxvt.scrollTtyKeypress: true
+urxvt.scrollstyle: plain
+urxvt.saveLines: 65535
+urxvt.letterSpace: -1
+urxvt.iso14755: false
+urxvt.iso14755_52: false
