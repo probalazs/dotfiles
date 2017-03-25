@@ -18,7 +18,9 @@ call plug#begin('~/.vim/plugged')
     Plug 'benjie/neomake-local-eslint.vim'
     Plug 'Valloric/YouCompleteMe', { 'do': './install.py --tern-completer' }
     Plug 'leafgarland/typescript-vim', { 'for': 'typescript' }
-    Plug 'Quramy/tsuquyomi' , { 'for': 'typescript' }
+    Plug 'Quramy/tsuquyomi', { 'for': 'typescript' }
+    Plug 'vim-erlang/vim-erlang-omnicomplete', { 'for': 'erlang' }
+    Plug 'tpope/vim-surround'
 call plug#end()
 
 " import base vim settings
