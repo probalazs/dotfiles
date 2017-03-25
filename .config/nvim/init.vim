@@ -11,7 +11,6 @@ call plug#begin('~/.vim/plugged')
     Plug 'vim-airline/vim-airline'
     Plug 'kien/ctrlp.vim'
     Plug 'editorconfig/editorconfig-vim'
-    Plug 'rking/ag.vim'
     Plug 'pangloss/vim-javascript'
     Plug 'Shougo/vimproc.vim', { 'do': 'make' }
     Plug 'vim-ctrlspace/vim-ctrlspace'
@@ -26,7 +25,6 @@ call plug#end()
 source ~/.vim/config/base.vim
 
 " import plugin configs
-source ~/.vim/config/plugins/ag.vim
 source ~/.vim/config/plugins/airline.vim
 source ~/.vim/config/plugins/ctrlspace.vim
 source ~/.vim/config/plugins/nerdtree.vim
