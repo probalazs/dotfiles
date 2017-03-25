@@ -9,7 +9,6 @@ call plug#begin('~/.vim/plugged')
     Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
     Plug 'vim-airline/vim-airline-themes'
     Plug 'vim-airline/vim-airline'
-    Plug 'kien/ctrlp.vim'
     Plug 'editorconfig/editorconfig-vim'
     Plug 'pangloss/vim-javascript'
     Plug 'Shougo/vimproc.vim', { 'do': 'make' }
@@ -21,6 +20,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'Quramy/tsuquyomi', { 'for': 'typescript' }
     Plug 'vim-erlang/vim-erlang-omnicomplete', { 'for': 'erlang' }
     Plug 'tpope/vim-surround'
+    Plug 'moll/vim-node', { 'for': 'javascript' }
 call plug#end()
 
 " import base vim settings
