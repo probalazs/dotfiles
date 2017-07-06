@@ -12,10 +12,10 @@ call plug#begin('~/.vim/plugged')
     Plug 'Shougo/vimproc.vim', { 'do': 'make' }
     Plug 'vim-ctrlspace/vim-ctrlspace'
     Plug 'neomake/neomake'
-    Plug 'Valloric/YouCompleteMe', { 'do': './install.py --tern-completer' }
     Plug 'leafgarland/typescript-vim', { 'for': 'typescript' }
     Plug 'Quramy/tsuquyomi', { 'for': 'typescript' }
     Plug 'moll/vim-node', { 'for': 'javascript' }
+    Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 call plug#end()
 
 """"""""
@@ -173,6 +173,15 @@ colorscheme hybrid_reverse
 let g:airline_theme = "hybrid"
 
 " you complete me
-let g:ycm_always_populate_location_list = 1
-let g:ycm_filepath_completion_use_working_dir = 1
-let g:ycm_collect_identifiers_from_comments_and_strings = 1
+let g:deoplete#enable_at_startup = 1
+let g:deoplete#enable_ignore_case = 1
+let g:deoplete#max_list = 10
+
+let g:deoplete#sources = {}
+let g:deoplete#sources._ = []
+
+let g:deoplete#omni#input_patterns = {}
+let g:deoplete#omni#input_patterns.html = '<[^>]*\s[[:alnum:]-]*'
+
+inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
+inoremap <expr><BS> deoplete#smart_close_popup()."\<C-h>"
