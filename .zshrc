@@ -15,7 +15,13 @@ plugins=(
     nvm
     npm
     yarn
+    tmux
 )
+
+# tmux plugin settings
+export ZSH_TMUX_AUTOSTART=true 
+export ZSH_TMUX_AUTOSTART_ONCE=false
+export ZSH_TMUX_AUTOCONNECT=false
 
 # path environment
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:~/.local/bin:$PATH"
@@ -36,10 +42,11 @@ export EDITOR='vim'
 export NVM_DIR=~/.nvm
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  
 
+# yarn include to path
+export PATH="$HOME/.yarn/bin:$PATH"
+
 # load local .zshrc
 if [ -f ~/.zshrc.local ]; then
     source ~/.zshrc.local
 fi
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-export PATH="$HOME/.yarn/bin:$PATH"
