@@ -14,6 +14,7 @@ plugins=(
     mercurial
     nvm
     npm
+    yarn
 )
 
 # path environment
@@ -40,3 +41,5 @@ if [ -f ~/.zshrc.local ]; then
     source ~/.zshrc.local
 fi
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+export PATH="$HOME/.yarn/bin:$PATH"
