@@ -10,8 +10,8 @@ urxvt.letterSpace: -1
 urxvt.iso14755: false
 urxvt.iso14755_52: false
 
-*.font: xft:bitstream vera sans mono:size=9:antialias=true
-*.boldFont: xft:bitstream vera sans mono:bold:size=9:antialias=true
+*.font: xft:bitstream vera sans mono:size=11:antialias=true
+*.boldFont: xft:bitstream vera sans mono:bold:size=11:antialias=true
 
 *.background: #0f0f0f
 *.foreground: #c8c8c8
