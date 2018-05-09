@@ -1,8 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
-let g:netrw_dirhist_1='/home/balazs/.dropbox'
-let g:netrw_dirhist_2='/home/balazs/.dropbox/instance1'
-let g:netrw_dirhist_3='/home/balazs/Sources/java/gy4/point'
-let g:netrw_dirhist_4='/home/balazs/Sources/pager-mobile/.tmp'
-let g:netrw_dirhist_5='/home/balazs/Sources/pager-mobile/.tmp/src'
-let g:netrw_dirhist_6='/home/balazs/.config'
