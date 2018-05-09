@@ -22,9 +22,12 @@ plugins=(
 export ZSH_TMUX_AUTOSTART=true 
 export ZSH_TMUX_AUTOSTART_ONCE=false
 export ZSH_TMUX_AUTOCONNECT=false
+#
+#Android
+export ANDROID_HOME=/home/balazs/Android/Sdk
 
 # path environment
-export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:~/.local/bin:$PATH"
+export PATH="$HOME/Android/Sdk/platform-tools:$HOME/.yarn/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:~/.local/bin:$PATH"
 
 # load oh-my-zsh
 source $ZSH/oh-my-zsh.sh
@@ -42,11 +45,11 @@ export EDITOR='vim'
 export NVM_DIR=~/.nvm
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  
 
-# yarn include to path
-export PATH="$HOME/.yarn/bin:$PATH"
-
 # load local .zshrc
 if [ -f ~/.zshrc.local ]; then
     source ~/.zshrc.local
 fi
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# added by travis gem
+[ -f /home/balazs/.travis/travis.sh ] && source /home/balazs/.travis/travis.sh

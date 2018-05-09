@@ -5,3 +5,5 @@
 	email = probalazs@nyenyere.eu
 [push]
 	default = matching
+[credential]
+    helper = store
