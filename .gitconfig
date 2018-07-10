@@ -1,0 +1,9 @@
+[core]
+	editor = vim
+[user]
+	name = Balazs Prokics
+    email = probalazs@nyenyere.eu
+[push]
+	default = matching
+[credential]
+    helper = store
