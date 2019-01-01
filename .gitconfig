@@ -2,8 +2,12 @@
 	editor = vim
 [user]
 	name = Balazs Prokics
-    email = probalazs@nyenyere.eu
+	email = balazs.prokics@emarsys.com
 [push]
 	default = matching
 [credential]
     helper = store
+[log]
+	decorate = short
+[rebase]
+	autoSquash = true
